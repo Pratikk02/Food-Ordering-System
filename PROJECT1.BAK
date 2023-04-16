@@ -1,0 +1,457 @@
+#include<iostream.h>
+#include<conio.h>
+#include<process.h>
+int main()
+{
+clrscr();
+int n,x,q,amt1=0,amt2=0,amt3=0,amt4=0,amt5=0,amt6=0,total=0;
+float total1=0,tax=0;
+int amts1=0,amts2=0,amts3=0,amts4=0;
+int amtx1=0,amtx2=0,amtx3=0,amtx4=0,amtx5=0;
+int amtp1=0,amtp2=0,amtp3=0,amtp4=0,amtp5=0;
+int amtb1=0,amtb2=0,amtb3=0,amtb4=0;
+int amtd1=0,amtd2=0,amtd3=0,amtd4=0;
+int amtbv1=0,amtbv2=0,amtbv3=0,amtbv4=0,amtbv5=0;
+int q1,q2,q3,q4,q5;
+cout<<"\t\t\t\tCOMPUTER PROJECT";
+cout<<"\n\t\t\t\tRESTAURANT MENU\n\n\n\t\t\t";
+for (int i=0;i<12;i++)
+cout<<"-";
+for (int j=0;j<9;j++)
+cout<<"*";
+for (int h=0;h<12;h++)
+cout<<"-";
+cout<<"\n\n\n\t\t\t\tWELCOME TO Route 66\n\n\n\t\t\t";
+for ( i=0;i<12;i++)
+cout<<"-";
+for ( j=0;j<9;j++)
+cout<<"*";
+for ( h=0;h<12;h++)
+cout<<"-";
+cout<<"\n\n\n\n\n\n\n\t\t\t\t\t        PROJECT BY:-Avyansh Chaturvedi";
+cout<<"\n\t\t\t\t      \t                    -Prarthan Patel";
+cout<<"\n\t\t\t\t      \t                    -Pratik Kelkar";
+cout<<"\n\t\t\t\t      \t                    -Jainam Shah";
+getch();
+clrscr();
+menu:
+cout<<"\n\n\t\t\t"; for ( i=0;i<12;i++)
+cout<<"-";
+for (j=0;j<9;j++)
+cout<<"*";
+for (h=0;h<12;h++)
+cout<<"-";
+cout<<"\t\t\t\t\t\t";
+cout<<"\n\t\t\t\t      MENU\n\n\t\t\t";
+for ( i=0;i<12;i++)
+cout<<"-";
+for ( j=0;j<9;j++)
+cout<<"*";
+for ( h=0;h<12;h++)
+cout<<"-";
+cout<<"\n\t\t\t1.Starters";
+cout<<"\n\t\t\t2.Soups and pastas";
+cout<<"\n\t\t\t3.Pizzas";
+cout<<"\n\t\t\t4.Burritos";
+cout<<"\n\t\t\t5.Desert";
+cout<<"\n\t\t\t6.Beverages";
+cout<<"\n\t\t\t7.Exit";
+cout<<"\n\t\t\t8.Bill";
+cout<<"\n\n\n\t\t  Enter your choice: ";
+cin>>n;
+clrscr();
+switch(n)
+{
+	case 1:char ch;
+	       do{
+		 cout<<"\n\t\t\t\t        STARTERS";
+		 cout<<"\n\t\t\t1.Veg rolls........................50";
+		 cout<<"\n\n\t\t\t2.Veg lollipop.....................40";
+		 cout<<"\n\n\t\t\t3.French fries.....................45";
+		 cout<<"\n\n\t\t\t4.Paneer69.........................69";
+		 cout<<"\n\n\n\t\tEnter your dish: ";
+		 cin>>x;
+		 if(x>0 && x<=4)
+		 goto st;
+		 else
+		 cout<<"\n\t\tPlease enter a valid number!";
+		 st:  switch(x)
+		 {
+		 case 1: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q1;
+		 amts1=50*q1;
+		 cout<<"\n\t\tAmount= "<<amts1;
+		 break;
+		 case 2: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q2;
+		 amts2=40*q2;
+		 cout<<"\n\t\tAmount= "<<amts2;
+		 break;
+		 case 3:  cout<<"\t\tEnter quantity: ";
+		 cin>>q3;
+		 amts3=45*q3;
+		 cout<<"\n\t\tAmount= "<<amts3;
+		 break;
+		 case 4:  cout<<"\t\tEnter quantity: ";
+		 cin>>q4;
+		 amts4=69*q4;
+		 cout<<"\n\t\tAmount= "<<amts4;
+		 break;
+		 default : ;
+		 }
+		 cout<<"\n\t\tDo you want to order more:- ";
+		 cin>>ch;
+		 clrscr();
+		 }
+		 while(ch=='Y'||ch=='y');
+		 amt1=amts1+amts2+amts3+amts4;
+		 clrscr();
+		 goto menu;
+		 cout<<"\nTotal amt for starters= "<<amt1;
+
+
+	case 2:  char ch2;
+	       do{
+		cout<<"\n\t\t\t        SOUPS AND PASTAS";
+		 cout<<"\n\t\t1.Sweet corn.......................80";
+		 cout<<"\n\n\t\t2.Manchow..........................85";
+		 cout<<"\n\n\t\t3.Cream of Broccoli................95";
+		 cout<<"\n\n\t\t4.Lasagna.........................200";
+		 cout<<"\n\n\t\t5.Arabatia/Alfredo/Alpesto........150";
+		 cout<<"\n\n\n\t\tEnter your dish: ";
+		 cin>>x;
+		 if(x>0 && x<=5)
+		 {
+		  goto sp;
+		 }
+		 else
+		 cout<<"\n\t\tPlease enter a valid number!";
+		 sp: switch(x)
+		 {
+		 case 1: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q1;
+		 amtx1=80*q1;
+		 cout<<"\n\t\tAmount= "<<amtx1;
+		 break;
+		 case 2: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q2;
+		 amtx2=85*q2;
+		 cout<<"\n\t\tAmount= "<<amtx2;
+		 break;
+		 case 3:  cout<<"\t\tEnter quantity: ";
+		 cin>>q3;
+		 amtx3=95*q3;
+		 cout<<"\n\t\tAmount= "<<amtx3;
+		 break;
+		 case 4:  cout<<"\t\tEnter quantity: ";
+		 cin>>q4;
+		 amtx4=200*q4;
+		 cout<<"\n\t\tAmount= "<<amtx4;
+		 break;
+		 case 5:   cout<<"\t\tEnter quantity: ";
+		 cin>>q5;
+		 amtx5=150*q5;
+		 cout<<"\n\t\tAmount= "<<amtx5;
+		 default : ;
+		 }
+
+		 cout<<"\n\t\tDo you want to order more:-  ";
+		 cin>>ch2;
+		 clrscr();
+		 }
+		 while(ch2=='Y'||ch2=='y');
+		 amt2=amtx1+amtx2+amtx3+amtx4+amtx5;
+		 clrscr();
+		 goto menu;
+
+		 cout<<"The total for soups and pastas is= "<<amt2;
+
+	case 3:  char ch3;
+	       do{
+		cout<<"\n\t\t\t        PIZZA";
+		 cout<<"\n\t\t1.Margherita.......................60";
+		 cout<<"\n\n\t\t2.Pecado..........................140";
+		 cout<<"\n\n\t\t3.7 Cheese........................145";
+		 cout<<"\n\n\t\t4.Mylta power.....................200";
+		 cout<<"\n\n\t\t5.Bootcamp........................300";
+		 cout<<"\n\n\n\t\tEnter your dish: ";
+		 cin>>x;
+		  if(x>0 && x<=5)
+		 {
+		   goto piz;
+		 }
+		 else
+		 cout<<"\n\t\tPlease enter a valid number!";
+		 piz: switch(x)
+		 {
+		 case 1: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q1;
+		 amtp1=60*q1;
+		 cout<<"\n\t\tAmount= "<<amtp1;
+		 break;
+		 case 2: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q2;
+		 amtp2=140*q2;
+		 cout<<"\n\t\tAmount= "<<amtp2;
+		 break;
+		 case 3:  cout<<"\n\t\tEnter quantity: ";
+		 cin>>q3;
+		 amtp3=145*q3;
+		 cout<<"\n\t\tAmount= "<<amtp3;
+		 break;
+		 case 4:  cout<<"\n\t\tEnter quantity: ";
+		 cin>>q4;
+		 amtp4=200*q4;
+		 cout<<"\n\t\tAmount= "<<amtp4;
+		 break;
+		 case 5:   cout<<"\n\t\tEnter quantity: ";
+		 cin>>q5;
+		 amtp5=300*q5;
+		 cout<<"\n\t\tAmount= "<<amtp5;
+		 default : ;}
+		 cout<<"\n\t\tDo you want to order more:- ";
+		 cin>>ch3;
+		 clrscr();
+		 }
+		 while(ch3=='Y'||ch3=='y');
+		 amt3=amtp1+amtp2+amtp3+amtp4+amtp5;
+		 clrscr();
+		 goto menu;
+		 cout<<"\nThe total for pizza is= "<<amt3;
+
+	case 4:  char ch4;
+	       do{
+		 cout<<"\n\t\t\t        BURRITOS";
+		 cout<<"\n\t\t1.Supremo.........................150";
+		 cout<<"\n\n\t\t2.Cheese max.......................90";
+		 cout<<"\n\n\t\t3.Ranch House.........................115";
+		 cout<<"\n\n\t\t4.Paneer mexicana..................95";
+		 cout<<"\n\n\n\t\tEnter your dish: ";
+		 cin>>x;
+		  if(x>0 && x<5)
+		 {
+		    goto bur;
+		 }
+		 else
+		 cout<<"\n\t\tPlease enter a valid number!";
+		  bur:  switch(x)
+		 {
+		 case 1: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q1;
+		 amtb1=150*q1;
+		 cout<<"\n\t\tAmount= "<<amtb1;
+		 break;
+		 case 2: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q2;
+		 amtb2=90*q2;
+		 cout<<"\n\t\tAmount= "<<amtb2;
+		 break;
+		 case 3:  cout<<"\t\tEnter quantity: ";
+		 cin>>q3;
+		 amtb3=115*q3;
+		 cout<<"\n\t\tAmount= "<<amtb3;
+		 break;
+		 case 4:  cout<<"\n\t\tEnter quantity: ";
+		 cin>>q4;
+		 amtb4=95*q4;
+		 cout<<"\n\t\tAmount= "<<amtb4;
+		 break;
+		 default : ;
+		 }
+		 cout<<"\n\t\tDo you want to order more:- ";
+		 cin>>ch4;
+		 clrscr();
+		 }
+		 while(ch4=='Y'||ch4=='y');
+		 amt4=amtb1+amtb2+amtb3+amtb4;
+		 clrscr();
+		 goto menu;
+		 cout<<"\nThe total for burritos is= "<<amt4;
+
+	case 5:  char ch5;
+	       do{
+		 cout<<"\n\t\t\t         DESSERT";
+		 cout<<"\n\t\t1.Brownie..........................50";
+		 cout<<"\n\n\t\t2.Chocolate ice cream..............60";
+		 cout<<"\n\n\t\t3.Vanilla ice cream................50";
+		 cout<<"\n\n\t\t4.Sizzling Brownie with ice cream...........75";
+		 cout<<"\n\n\n\t\tEnter your dish: ";
+		 cin>>x;
+		  if(x>0 && x<5)
+		 {
+		  goto des;
+		 }
+		 else
+		 cout<<"\n\t\tPlease enter a valid number!";
+		  des:  switch(x)
+		 {
+		 case 1: cout<<"\nEnter quantity: ";
+		 cin>>q1;
+		 amtd1=50*q1;
+		 cout<<"\n\t\tAmount= "<<amtd1;
+		 break;
+		 case 2: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q2;
+		 amtd2=60*q2;
+		 cout<<"\n\t\tAmount= "<<amtd2;
+		 break;
+		 case 3:  cout<<"\n\t\tEnter quantity: ";
+		 cin>>q3;
+		 amtd3=50*q3;
+		 cout<<"\n\t\tAmount= "<<amtd3;
+		 break;
+		 case 4:  cout<<"\n\t\tEnter quantity: ";
+		 cin>>q4;
+		 amtd4=75*q4;
+		 cout<<"\n\t\tAmount= "<<amtd4;
+		 break;
+		 default : ;
+		 }
+		 cout<<"\n\t\tDo you want to order more:- ";
+		 cin>>ch5;
+		 clrscr();
+		 }
+		 while(ch5=='Y'||ch5=='y');
+		 amt5=amtd1+amtd2+amtd3+amtd4;
+		 clrscr();
+		 goto menu;
+		 cout<<"\nThe total for desert is= "<<amt5;
+
+
+	case 6: char ch6;
+	       do{
+	cout<<"\n\t\t\t        BEVERAGES";
+		 cout<<"\n\t\t1.Mint mojito........................80";
+		 cout<<"\n\n\t\t2.Chocolate milkshake.............135";
+		 cout<<"\n\n\t\t3.Pepsi/Coke/Fanta/Sprite..........45";
+		 cout<<"\n\n\t\t4.Mineral Water....................15";
+		 cout<<"\n\n\t\t5.Beer............................750";
+		 cout<<"\n\n\n\t\tEnter your dish: ";
+		 cin>>x;
+		  if(x>0 && x<=5)
+		 {
+		  goto bev;
+		 }
+		 else
+		 cout<<"\n\t\tPlease enter a valid number!";
+		  bev:  switch(x)
+		 {
+		 case 1: cout<<"\nEnter quantity: ";
+		 cin>>q1;
+		 amtbv1=80*q1;
+		 cout<<"\n\t\tAmount= "<<amtbv1;
+		 break;
+		 case 2: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q2;
+		 amtbv2=135*q2;
+		 cout<<"\n\t\tAmount= "<<amtbv2;
+		 break;
+		 case 3:  cout<<"\n\t\tEnter quantity: ";
+		 cin>>q3;
+		 amtbv3=45*q3;
+		 cout<<"\n\t\tAmount= "<<amtbv3;
+		 break;
+		 case 4:  cout<<"\n\t\tEnter quantity: ";
+		 cin>>q4;
+		 amtbv4=15*q4;
+		 cout<<"\n\t\tAmount= "<<amtbv4;
+		 break;
+		 case 5: cout<<"\n\t\tEnter quantity: ";
+		 cin>>q5;
+		 amtbv5=750*q5;
+		 cout<<"\n\t\tAmount= "<<amtbv5;
+		 break;
+		 default : ;
+		 }
+		 cout<<"\n\t\tDo you want to order more:- ";
+		 cin>>ch6;
+		 clrscr();
+		 }
+		 while(ch6=='Y'||ch6=='y');
+		 amt6=amtbv1+amtbv2+amtbv3+amtbv4;
+		 clrscr();
+		 goto menu;
+		 cout<<"\nThe total for beverages is= "<<amt6;
+		 break;
+	case 7: exit(0);
+	break;
+	case 8: if (amt1>0)
+	cout<<"\nAMOUNT FOR STARTERS= \n"<<amt1;
+	if (amts1>0)
+	cout<<"\nVeg Rolls: "<<amts1;
+	if (amts2>0)
+	cout<<"\nVeg Lollipop: "<<amts2;
+	if (amts3>0)
+	cout<<"\nFrench Fries: "<<amts3;
+	if (amts4>0)
+	cout<<"\nPaneer 69: "<<amts4;
+		if (amt2>0)
+		cout<<"\nAMOUNT FOR SOUPS & PASTAS= \n"<<amt2;
+		if (amtx1>0)
+	cout<<"\n\nSweet Corn Soup: "<<amtx1;
+		if (amtx2>0)
+	cout<<"\nManchow Soup: "<<amtx2;
+	if (amtx3>0)
+	cout<<"\nCream of Broccoli: "<<amtx3;
+	if (amtx4>0)
+	cout<<"\nLasagna: "<<amtx4;
+	if (amtx5>0)
+	cout<<"\nChoice of Pasta: "<<amtx5;
+	if (amt3>0)
+		cout<<"\nAMOUNT FOR PIZZAS= \n"<<amt3;
+		if (amtp1>0)
+	cout<<"\n\nMargherita: "<<amtp1;
+		if (amtp2>0)
+	cout<<"\nPecado: "<<amtp2;
+	if (amtp3>0)
+	cout<<"\n7 Cheese: "<<amtp3;
+	if (amtp4>0)
+	cout<<"\nMylta Power: "<<amtp4;
+	if (amtp5>0)
+	cout<<"\nBootcamp: "<<amtp5;
+	if (amt4>0)
+		 cout<<"\nAMOUNT FOR BURRITOS= \n"<<amt4;
+		 if (amtb1>0)
+	cout<<"\n\nSupremo: "<<amtb1;
+	if (amtb2>0)
+	cout<<"\nChesse Max: "<<amtb2;
+	       if (amtb3>0)
+	cout<<"\nRanch House: "<<amtb3;
+		 if (amtb4>0)
+	cout<<"\nPaneer Mexicana: "<<amtb4;
+	  if (amt5>0)
+		 cout<<"\nAMOUNT FOR DESSERTS= \n"<<amt5;
+	       if (amtd1>0)
+	cout<<"\n\nBrownie: "<<amtd1;
+		 if (amtd2>0)
+	cout<<"\nChocolate Ice Cream: "<<amtd2;
+		 if (amtd3>0)
+	cout<<"\nVanilla Ice Cream: "<<amtd3;
+		 if (amtd4>0)
+	cout<<"\nSizzling Brownie with Ice Cream: "<<amtd4;
+	if (amt6>0)
+		 cout<<"\nAMOUNT FOR BEVERAGES= \n"<<amt6;
+		 if (amtbv1>0)
+	cout<<"\n\nMint Mojito: "<<amtbv1;
+		 if (amtbv2>0)
+	cout<<"\nChocolate Milkshake: "<<amtbv2;
+		 if (amtbv3>0)
+	cout<<"\nChoice of Soft drink: "<<amtbv3;
+		 if (amtbv4>0)
+	cout<<"\nMineral Water: "<<amtbv4;
+		if (amtbv5>0)
+	cout<<"\nBeer: "<<amtbv5;
+	total=amt1+amt2+amt3+amt4+amt5+amt6;
+	cout<<"\n\nFinal amount wihtout tax=  "<<total;
+	cout<<"\n\tGST= 18%";
+	tax=0.18*total;
+	total1=tax+total;
+	cout<<"\n\n\n\t\tFINAL BILL (including tax)= "<<total1;
+	break;
+	default:  cout<<"\n\t\tPlease enter a valid number!!";
+
+
+}
+getch();
+return 0;
+}
