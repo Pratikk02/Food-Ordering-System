@@ -12,25 +12,20 @@ int amtb1,amtb2,amtb3,amtb4;
 int amtd1,amtd2,amtd3,amtd4;
 int amtbv1,amtbv2,amtbv3,amtbv4;
 int q1,q2,q3,q4,q5;
-cout<<"\t\t\t\tCOMPUTER PROJECT";
 cout<<"\n\t\t\t\tRESTAURANT MENU\n\n\n\t\t\t";
 for (int i=0;i<12;i++)
-cout<<"-";
+	cout<<"-";
 for (int j=0;j<9;j++)
-cout<<"*";
+	cout<<"*";
 for (int h=0;h<12;h++)
-cout<<"-";
+	cout<<"-";
 cout<<"\n\n\n\t\t\t\tWELCOME TO Route 66\n\n\n\t\t\t";
 for (int i=0;i<12;i++)
-cout<<"-";
+	cout<<"-";
 for (int j=0;j<9;j++)
-cout<<"*";
+	cout<<"*";
 for (int h=0;h<12;h++)
-cout<<"-";
-cout<<"\n\n\n\n\n\n\n\t\t\t\t\t        PROJECT BY:-Avyansh Chaturvedi";
-cout<<"\n\t\t\t\t      \t                    -Prarthan Patel";
-cout<<"\n\t\t\t\t      \t                    -Pratik Kelkar";
-cout<<"\n\t\t\t\t      \t                    -Jainam Shah";
+	cout<<"-";
 cin.get();
 system("CLS");
 menu:
